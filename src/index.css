@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme Switch */
+.switch {
+    position: relative;
+    width: 55px;
+    height: 25px;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer ;
+    transition: background-color 0.3s;
+}
+
+.switch .ball {
+    position: absolute;
+    top: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+
+.switch.dark {
+    background-color: #333;
+}
+
+.ball.dark {
+    background-color: #333;
+}
+
+.switch.dark .ball {
+    transform: translate(30px);
+}
+
+.switch.light .ball {
+    transform: translate(2px)
+}
